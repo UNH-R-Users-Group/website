@@ -3,24 +3,19 @@ format: html
 ---
 
 
-# Logistics for Enrolled Students
+# Getting Started in R
+### Installing R and R Studio
 
-- We will meet virtually via Zoom during the first week (June 3 - June 8).  Check your email for the Zoom link.
-- We transition to Shoals Marine Lab on Appledore Island for the second week of the course (June 10 - 17). 
-- Communication for this class will primarily happen on [Slack](https://slack.com/). We recommend that you download the mobile app for ease of communication while we are on island. Check your email for the invite link.
-- You should submit your homework assignments via Canvas. If, for whatever reason, you don't have access to Canvas you should email your assignment submissions to Emily at [emily.malcolmwhite@unh.edu](mailto:emily.malcolmwhite@unh.edu). 
+Instructions for installing R and R Studio: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/). 
 
-# Install R and RStudio
+### Additional Resources
 
-To access the course materials, you will need to have both R and RStudio installed on your computer. Follow the instructions available on the Posit website: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/). 
+1. Helpful website for asking questions: [Stackoverflow](https://stackoverflow.com)
+2. [Learning Statistics with R](https://learningstatisticswithr.com/) (free access!)
+3. [Data wrangling in R: load, explore, transform, and visualize data for modeling tidyverse libraries](https://learning.oreilly.com/library/view/data-wrangling-with/9781803235400/) (UNH students/faculty can access via the UNH Library)
 
-- Note that there are *two* programs you need to download. R (or base R) is the brains or the calculator working behind the scenes - to work with this directly is possible but it's a bit messy. RStudio is an additional interface that makes it easier to organize your scripts, your plots, your objects, and your files in one window. Typically, we will open RStudio and work directly in that program but it's important to also have R installed in the background.  
-- You should install these two programs *before* our first class. There will be some time given during our first class to help troubleshoot any issues that might arise during installation.  
 
-# Schedule & Course Materials 
-
-- to download the .qmd files (Template, Homework) you should right click and "Save Link As..."
-- to view the Notes, just left-click in the usual way
+# Schedule & Materials 
 
 ```{r}
 #| echo: FALSE
@@ -31,98 +26,115 @@ library(gt)
 library(tidyverse)
 library(fontawesome)
 gs4_deauth()
-d <- read_sheet("https://docs.google.com/spreadsheets/d/14u_VJSsrctmACH9mqCtYfqRrHW2v7I1COl6Atf9YPM4/edit?usp=sharing", sheet = "Sheet1")
+d <- read_sheet("https://docs.google.com/spreadsheets/d/1k4RPfWwKVxPpp4wRDEc08KDxzBLG3vOcWMC6_hsF648/edit?gid=0#gid=0", sheet = "Sheet1")
 ```
 
 
 ```{r, echo = FALSE}
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+library(googlesheets4)
+library(gt)
+library(tidyverse)
+library(fontawesome)
+
+# Deauthorize Google Sheets for reading public sheets
+gs4_deauth()
+
+# Read the data from the Google Sheet
+d <- read_sheet("https://docs.google.com/spreadsheets/d/1k4RPfWwKVxPpp4wRDEc08KDxzBLG3vOcWMC6_hsF648/edit?gid=0", sheet = "Sheet1")
+
+# Render the table
 d |>
   gt() |>
+  
+  # Handle missing values in the first two columns
   sub_missing(
-    columns = c(1:4,8),
+    columns = c(1:2),
     missing_text = ""
   ) |>
-  #fas-fa-file-code
+  
+  # Add file-code icon with links for the 'Template' column
   text_transform(cells_body(columns = c(Template)),
     fn = function(x) {
-      ifelse(is.na(x), fontawesome::fa("file-code",fill_opacity = 0.1),
-        glue::glue("<a href = {x} >{fontawesome::fa('file-code')}</a>")
+      ifelse(is.na(x), fontawesome::fa("file-code", fill_opacity = 0.1),
+        glue::glue("<a href = '{x}' >{fontawesome::fa('file-code')}</a>")
       )
     }
   ) |>
-   text_transform(cells_body(columns = c(Data)),
+  
+  # Add table icon with links for the 'Data' column
+  text_transform(cells_body(columns = c(Data)),
      fn = function(x) {
         ifelse(is.na(x), fontawesome::fa("table", fill_opacity = 0.1),
-          glue::glue("<a href = {x}>{fontawesome::fa('table')}</a>")
+          glue::glue("<a href = '{x}'>{fontawesome::fa('table')}</a>")
         )
      }
    ) |>
   
-  text_transform(cells_body(columns = c(Notes)),
-    fn = function(x) {
-      ifelse(is.na(x), fontawesome::fa('file-lines', fill_opacity = 0.1),
-        glue::glue("<a href = {x}>{fontawesome::fa('file-lines')}</a>")
-      )
-    }
-  ) |>
-  text_transform(cells_body(columns = c(Homework)),
-    fn = function(x) {
-      ifelse(is.na(x), fontawesome::fa("file-pen", fill_opacity = 0.1),
-        glue::glue("<a href = {x}>{fontawesome::fa('file-pen')}</a>")
-      )
-    }
-   ) |>
+  # Add link icon with links for the 'Videos' column
   text_transform(cells_body(columns = c(Videos)),
     fn = function(x) {
        ifelse(is.na(x), fontawesome::fa("link", fill_opacity = 0.1),
-         glue::glue("<a href = {x}>{fontawesome::fa('link')}</a>")
+         glue::glue("<a href = '{x}'>{fontawesome::fa('link')}</a>")
        )
     }
   ) |>
-  # aligning columns
+  
+  # Align columns: center for icons, left for dates/topics
   cols_align(
     align = "center", 
-    columns = c(Template, Notes, Homework, Videos)
-    ) |>
+    columns = c(Template, Data, Videos)
+  ) |>
+  
+  # Align Date and Topic columns to the left
   cols_align(
     align = "left", 
-    columns = c(Date, Time, Letter, Topic, Desc)
-    # thin borders between all items
-    ) |>
-  cols_align(
-    align = "right", 
-    columns = c(Data)
-    # thin borders between all items
-    ) |>
+    columns = c(Date, Topic)
+  ) |>
+  
+  # Add a top border to non-empty rows
   tab_style(
     style = cell_borders(
       sides = "top",
       color = "black", 
       weight = px(2)
     ),
-    locations = cells_body(rows = !is.na(Date)) 
+    locations = cells_body(rows = !is.na(Date))
   ) |>
-  # dark borders between days
+  
+  # Add a thick bottom border after a specific date (customize as needed)
   tab_style(
     style = cell_borders(
       sides = "bottom",
       color = "black",
-      weight = px(4) 
+      weight = px(4)
     ),
-    locations = cells_body(rows = Date == "Mon, June 17") 
+    locations = cells_body(rows = Date == "09/09/2024") # Adjust date if needed
   ) |>
+  
+  # Add a border around the column labels
   tab_style(
     style = cell_borders(
       sides = c("top", "bottom"),
       color = "black",
-      weight = px(4) 
+      weight = px(4)
     ),
-    locations = cells_column_labels(columns = everything()) 
+    locations = cells_column_labels(columns = everything())
   ) |>
-  # fixing column widths
-  cols_width(Date ~ px(150),
-             Time ~ px(90), 
-             Letter ~ px(30), 
-             Topic ~ px(250)) 
+  
+  # Set custom column widths for better alignment
+  cols_width(
+    Date ~ px(250),
+    Topic ~ px(250),
+    Template ~ px(100),
+    Data ~ px(100),
+    Videos ~ px(100)
+  )|>
+  # Set table width to span a % of the available page width
+  tab_options(
+    table.width = pct(70)
+  )
 ```
 

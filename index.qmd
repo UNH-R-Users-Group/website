@@ -2,13 +2,15 @@
 format: html
 ---
 
-## Course Overview
+## About Us
 
 ::: {.grid}
 
 ::: {.g-col-7}
 
-Welcome to the **UNH R Users Group!** -- We are a group of academics who are interested in teaching and learning about programming in the context of biology. We mainly work with the programming language, R, but encourage folks to bring projects in other languages. In the fall of 2024, we meet on Mondays 11am-12pm in Spaulding 278. These meetings are casual, typically consisting of 15-20 minutes of a topic followed by open coding time. The schedule for topics can be found here [Schedule & Resources 2024](schedule.qmd). All UNH grad students and faculty are welcome to attend!
+Welcome to the **UNH R Users Group!** -- We are a group of faculty and grad students at the University of New Hampshire who are interested in teaching and learning about programming in the context of biology. We mainly work with the programming language, R, but encourage folks to bring projects in other languages. 
+
+In the fall of 2024, *we meet on Mondays 11am-12pm in Spaulding 278*. These meetings are casual, typically consisting of 15-20 minutes of a topic followed by open coding time. The schedule for topics can be found here [Schedule & Resources 2024](schedule.qmd). All UNH grad students and faculty are welcome to attend!
 
 :::
 

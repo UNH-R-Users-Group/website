@@ -3,8 +3,7 @@ project:
   output-dir: docs
   
 website:
-  title: "UNH R Users Group Websire"
-  favicon: 
+  title: "UNH R Users Group Website"
   navbar:
     background: "#43CD80" 
     foreground: "#000000"
@@ -20,7 +19,6 @@ website:
       - icon: github
         href:  https://github.com/QuantMarineEcoLab/r_by_the_sea
   page-footer: 
-    left: "Made by EMW & ERW (2024) & Forked by FGF (2024)" 
     right: "Powered by Quarto"
         
 format:
