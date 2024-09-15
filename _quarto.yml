@@ -3,7 +3,7 @@ project:
   output-dir: docs
   
 website:
-  title: "UNH R Users Group Websire"
+  title: "UNH R Users Group Website"
   favicon: 
   navbar:
     background: "#43CD80" 
