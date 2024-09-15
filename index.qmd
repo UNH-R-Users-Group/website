@@ -14,7 +14,7 @@ Welcome to the **UNH R Users Group!** -- We are a group of academics who are int
 
 ::: {.g-col-4}
 
-![](images/r_by_the_sea_hex_sticker_nobg.png)
+![](images/UNH_RUsers.png)
 
 :::
 
