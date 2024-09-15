@@ -8,7 +8,7 @@ format: html
 
 ::: {.g-col-7}
 
-Welcome to **"R by the Sea: Data Analysis in the Marine Sciences"** -- a two-week boot camp style course designed to help you harness the power of R for ecological and environmental research through project-based learning. Typically, we meet virtually for the first week and then we transition to the [Shoals Marine Lab on Appledore Island](https://www.shoalsmarinelaboratory.org/) for the second week of the course. This course provides a unique opportunity to enhance your skills in R programming working hands-on with real-life data surrounded by the natural beauty and biodiversity of the Gulf of Maine.
+Welcome to the **UNH R Users Group!** -- We are a group of academics who are interested in teaching and learning about programming in the context of biology. We mainly work with the programming language, R, but encourage folks to bring projects in other languages. In the fall of 2024, we meet on Mondays 11am-12pm in Spaulding 278. These meetings are casual, typically consisting of 15-20 minutes of a topic followed by open coding time. The schedule for topics can be found here [Schedule & Resources 2024](schedule.qmd). All UNH grad students and faculty are welcome to attend!
 
 :::
 
@@ -20,6 +20,4 @@ Welcome to **"R by the Sea: Data Analysis in the Marine Sciences"** -- a two-wee
 
 :::
 
--   For resources to learn R, check out the [Schedule & Resources 2024](schedule.qmd). It contains resources for the most recent iteration of this course.
 
--   For more information on upcoming offerings and enrolling in the course, check out the [Shoals Marine Lab "R by the Sea" website](https://www.shoalsmarinelaboratory.org/r-sea-data-analysis-marine-sciences)
