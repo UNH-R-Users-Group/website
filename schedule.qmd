@@ -55,8 +55,8 @@ d |>
     missing_text = ""
   ) |>
   
-  # Add file-code icon with links for the 'Template' column
-  text_transform(cells_body(columns = c(Template)),
+  # Add file-code icon with links for the 'Files' column
+  text_transform(cells_body(columns = c(Files)),
     fn = function(x) {
       ifelse(is.na(x), fontawesome::fa("file-code", fill_opacity = 0.1),
         glue::glue("<a href = '{x}' >{fontawesome::fa('file-code')}</a>")
@@ -85,7 +85,7 @@ d |>
   # Align columns: center for icons, left for dates/topics
   cols_align(
     align = "center", 
-    columns = c(Template, Data, Videos)
+    columns = c(Files, Data, Videos)
   ) |>
   
   # Align Date and Topic columns to the left
@@ -128,7 +128,7 @@ d |>
   cols_width(
     Date ~ px(250),
     Topic ~ px(250),
-    Template ~ px(100),
+    Files ~ px(100),
     Data ~ px(100),
     Videos ~ px(100)
   )|>
