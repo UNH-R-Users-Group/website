@@ -17,7 +17,7 @@ website:
         href: instructors.qmd
     tools:
       - icon: github
-        href:  https://github.com/QuantMarineEcoLab/r_by_the_sea
+        href:  https://github.com/UNH-R-Users-Group/website
   page-footer: 
     right: "Powered by Quarto"
         
