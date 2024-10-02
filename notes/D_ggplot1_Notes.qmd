@@ -12,6 +12,8 @@ format:
 execute: 
   message: FALSE
   warning: FALSE
+editor_options: 
+  chunk_output_type: console
 ---
 
 

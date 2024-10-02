@@ -6,7 +6,7 @@ format: html
 # Getting Started in R
 ### Installing R and R Studio
 
-Instructions for installing R and R Studio: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/). 
+###Instructions for installing R and R Studio: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/). 
 
 ### Additional Resources
 
