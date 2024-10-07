@@ -2,21 +2,18 @@
 format: html
 ---
 
-
 # Getting Started in R
-##Installing R and R Studio
 
-###Instructions for installing R and R Studio: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/). 
+#### Instructions for installing R and R Studio: <https://posit.co/download/rstudio-desktop/>.
 
 ### Additional Resources
 
-1. Learning R in R using package [swirl](https://swirlstats.com/students.html)
-2Helpful website for asking questions: [Stackoverflow](https://stackoverflow.com)
-3. [Learning Statistics with R](https://learningstatisticswithr.com/) (free access!)
-4. [Data wrangling in R: load, explore, transform, and visualize data for modeling tidyverse libraries](https://learning.oreilly.com/library/view/data-wrangling-with/9781803235400/) (UNH students/faculty can access via the UNH Library)
-5. [Choosing a graph type](https://www.data-to-viz.com/)
+1.  Learning R in R using package [swirl](https://swirlstats.com/students.html) 2Helpful website for asking questions: [Stackoverflow](https://stackoverflow.com)
+2.  [Learning Statistics with R](https://learningstatisticswithr.com/) (free access!)
+3.  [Data wrangling in R: load, explore, transform, and visualize data for modeling tidyverse libraries](https://learning.oreilly.com/library/view/data-wrangling-with/9781803235400/) (UNH students/faculty can access via the UNH Library)
+4.  [Choosing a graph type](https://www.data-to-viz.com/)
 
-# Schedule & Materials 
+# Schedule & Materials
 
 ```{r}
 #| echo: FALSE
@@ -29,7 +26,6 @@ library(fontawesome)
 gs4_deauth()
 d <- read_sheet("https://docs.google.com/spreadsheets/d/1k4RPfWwKVxPpp4wRDEc08KDxzBLG3vOcWMC6_hsF648/edit?gid=0#gid=0", sheet = "Sheet1")
 ```
-
 
 ```{r, echo = FALSE}
 #| echo: FALSE
@@ -138,4 +134,3 @@ d |>
     table.width = pct(70)
   )
 ```
-
