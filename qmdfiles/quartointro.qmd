@@ -75,3 +75,7 @@ penguins %>%
   gt()
 
 ```
+
+## References
+
+To render this document with apa citation style, you also need to download the apa-annotated-bibliography.csl document in this folder and store it in your working director folder for this document.
