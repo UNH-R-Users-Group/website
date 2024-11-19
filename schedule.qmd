@@ -17,6 +17,7 @@ format: html
 7.  [Guide for choosing models](https://pmc.ncbi.nlm.nih.gov/articles/PMC8187274/#ecy3336-sec-0004)
 8.  [Guide to creating pdf documents using Quarto](https://quarto.org/docs/guide/)
 9.  [Guide to publishing manuscripts using Quarto](https://quarto.org/docs/manuscripts/)
+10. [Guide for formatting markdown documents](https://rmd4sci.njtierney.com/)
 
 # Schedule & Materials
 
