@@ -13,11 +13,12 @@ format: html
 3.  [Data wrangling in R: load, explore, transform, and visualize data for modeling tidyverse libraries](https://learning.oreilly.com/library/view/data-wrangling-with/9781803235400/) (UNH students/faculty can access via the UNH Library)
 4.  [Guide to multilevel modeling](https://www.learn-mlms.com/index.html)
 5. [Guide for poisson regressions](https://stats.oarc.ucla.edu/r/dae/poisson-regression/)
-6.  [Choosing a graph type](https://www.data-to-viz.com/)
-7.  [Guide for choosing models](https://pmc.ncbi.nlm.nih.gov/articles/PMC8187274/#ecy3336-sec-0004)
-8.  [Guide to creating pdf documents using Quarto](https://quarto.org/docs/guide/)
-9.  [Guide to publishing manuscripts using Quarto](https://quarto.org/docs/manuscripts/)
-10. [Guide for formatting markdown documents](https://rmd4sci.njtierney.com/)
+6.  [Choosing a graph type (data to viz)](https://www.data-to-viz.com/)
+7. [Guide for making grahs (this resource is linked to datatoviz in #6!)](https://r-graph-gallery.com/)
+8.  [Guide for choosing models](https://pmc.ncbi.nlm.nih.gov/articles/PMC8187274/#ecy3336-sec-0004)
+9.  [Guide to creating pdf documents using Quarto](https://quarto.org/docs/guide/)
+10.  [Guide to publishing manuscripts using Quarto](https://quarto.org/docs/manuscripts/)
+11. [Guide for formatting markdown documents](https://rmd4sci.njtierney.com/)
 
 # Schedule & Materials
 
