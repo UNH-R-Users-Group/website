@@ -73,8 +73,7 @@ List of color presets [here](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj
 ```{r themes}
 theme_set(theme_bw())
 
-g + geom_point(color = "firebrick")+
-  faiths_theme()
+g + geom_point(color = "firebrick")
 
 ```
 
@@ -405,5 +404,5 @@ Things to keep in mind:
     facet_wrap(facet = "species",
                nrow = 3,#faceting vertically
                scales = "fixed"))
-ggsave("figures/penguins_species.pdf", width = 6, height = 5)
+
 ```
