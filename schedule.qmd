@@ -1,5 +1,8 @@
 ---
 format: html
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
 # Getting Started in R
@@ -7,18 +10,43 @@ format: html
 #### Instructions for installing R and R Studio: <https://posit.co/download/rstudio-desktop/>.
 
 ### Additional Resources
+
 1.[Big Book of R](https://www.bigbookofr.com/)
-2.  Learning R in R using package [swirl](https://swirlstats.com/students.html) Helpful website for asking questions: [Stackoverflow](https://stackoverflow.com)
-3.  [Learning Statistics with R](https://learningstatisticswithr.com/) (free access!)
-4.  [Data wrangling in R: load, explore, transform, and visualize data for modeling tidyverse libraries](https://learning.oreilly.com/library/view/data-wrangling-with/9781803235400/) (UNH students/faculty can access via the UNH Library)
-5.  [Guide to multilevel modeling](https://www.learn-mlms.com/index.html)
-6. [Guide for poisson regressions](https://stats.oarc.ucla.edu/r/dae/poisson-regression/)
-7.  [Choosing a graph type (data to viz)](https://www.data-to-viz.com/)
-8. [Guide for making grahs (this resource is linked to datatoviz in #6!)](https://r-graph-gallery.com/)
-9.  [Guide for choosing models](https://pmc.ncbi.nlm.nih.gov/articles/PMC8187274/#ecy3336-sec-0004)
-10.  [Guide to creating pdf documents using Quarto](https://quarto.org/docs/guide/)
-11.  [Guide to publishing manuscripts using Quarto](https://quarto.org/docs/manuscripts/)
-12. [Guide for formatting markdown documents](https://rmd4sci.njtierney.com/)
+
+2\. Learning R in R using package
+[swirl](https://swirlstats.com/students.html) Helpful website for asking
+questions: [Stackoverflow](https://stackoverflow.com)
+
+3\. [Learning Statistics with R](https://learningstatisticswithr.com/)
+(free access!)
+
+4\. [Data wrangling in R: load, explore, transform, and visualize data
+for modeling tidyverse
+libraries](https://learning.oreilly.com/library/view/data-wrangling-with/9781803235400/)
+(UNH students/faculty can access via the UNH Library)
+
+5\. [Guide to multilevel
+modeling](https://www.learn-mlms.com/index.html)
+
+6\. [Guide for poisson
+regressions](https://stats.oarc.ucla.edu/r/dae/poisson-regression/)
+
+7\. [Choosing a graph type (data to viz)](https://www.data-to-viz.com/)
+
+8\. [Guide for making grahs (this resource is linked to datatoviz in
+#6!)](https://r-graph-gallery.com/)
+
+9\. [Guide for choosing
+models](https://pmc.ncbi.nlm.nih.gov/articles/PMC8187274/#ecy3336-sec-0004)
+
+10\. [Guide to creating pdf documents using
+Quarto](https://quarto.org/docs/guide/)
+
+11\. [Guide to publishing manuscripts using
+Quarto](https://quarto.org/docs/manuscripts/)
+
+12\. [Guide for formatting markdown
+documents](https://rmd4sci.njtierney.com/)
 
 # Schedule & Materials
 
