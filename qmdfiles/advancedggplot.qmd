@@ -16,7 +16,7 @@ library(cowplot)
 library(gridExtra)
 ```
 
-```{r loading data}
+```{r loading data, include=FALSE}
 chic <- readr::read_csv("https://cedricscherer.com/data/chicago-nmmaps-custom.csv") 
 #:: is namespace that can be used to access a function without librarying the package
 
@@ -41,7 +41,8 @@ chic <- readr::read_csv("https://cedricscherer.com/data/chicago-nmmaps-custom.cs
 ```{r creating blank plot}
 #creating only the panel
 (g <- ggplot(data = chic,
-            aes(x = date, y = temp)))
+            aes(x = date, y = temp)))+
+  geom_point(color = "firebrick")
 #putting object in parentheses so it runs immediately
 ```
 
@@ -59,9 +60,8 @@ List of geoms [here](https://ggplot2.tidyverse.org/reference/)
 
 ## Changing Properties of Geometries
 
-List of color presets [here](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)
-
 ```{r changing properties of geometries}
+#colors() List of available base R colors
 (g <- ggplot(data = chic,
             aes(x = date, y = temp))+
     geom_point(color = "firebrick", shape = "diamond", size = 2)) #adds point layer to plot
@@ -70,50 +70,43 @@ List of color presets [here](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj
 
 ### Themes
 
-```{r themes}
-theme_set(theme_bw())
-
-g + geom_point(color = "firebrick")
-
-```
-
-theme() is essential for modifying elements of themes
-
-### Creating your own theme
+#### Creating your own theme
 
 ```{r}
 faiths_theme <- function() {
   theme(
     # 1) Add border with a purple dashed line
-    panel.border = element_rect(colour = "purple", fill = NA, linetype = 2),
+    panel.border = element_rect(colour = "black", fill = NA, linetype = 1),
     
     # 2) Set background color to aliceblue
-    panel.background = element_rect(fill = "aliceblue"),
+    panel.background = element_rect(fill = "white"),
     
     # 3) Modify grid lines: major grid lines in thistle color, dashed
-    panel.grid.major.x = element_line(colour = "thistle", linetype = 3, size = 0.5),
-    panel.grid.major.y = element_line(colour = "thistle", linetype = 3, size = 0.5),
+    panel.grid.major.x = element_line(colour = "grey", linetype = 3, size = 0.5),
+    panel.grid.major.y = element_line(colour = "grey", linetype = 3, size = 0.5),
     
     # Remove minor grid lines
     panel.grid.minor.x = element_blank(),
     panel.grid.minor.y = element_blank(),
     
     # 4) Customize axis text: italic and thistle-colored
-    axis.text = element_text(colour = "thistle", face = "italic",  family = "Times New Roman"),
+    axis.text = element_text(colour = "black", face = "italic",  family = "Times New Roman"),
     
     # 5) Customize axis titles: thistle color
-    axis.title = element_text(colour = "thistle", family = "Times New Roman"),
+    axis.title = element_text(colour = "black", family = "Times New Roman"),
     
     # Customize axis ticks: thistle color
-    axis.ticks = element_line(colour = "thistle"),
+    axis.ticks = element_line(colour = "black"),
     
     # 6) Place legend on the right side
     legend.position = "right"
   )
 }
 
-g + geom_point(alpha = 0.2)
+g + geom_point(alpha = 0.2)+ faiths_theme()
 ```
+
+[Choose your own color palette](https://r-graph-gallery.com/color-palette-finder)
 
 ### Adjusting Axes
 
@@ -380,29 +373,4 @@ ggplot(chic, aes(x = o3, y = temp)) +
   labs(x = "Ozone Level", y = "Temperature (°F)")
 ```
 
-## Making Publication Ready Plots
-
-```{r}
-library(tidyverse)
-library(palmerpenguins)
-data(penguins)
-```
-
-## Plotting with Penguins dataset
-
-Things to keep in mind:
-
-```{r}
-#Max figure width: 6.875 in 
-#Max figure height: 9.0625 in 
-(p <- ggplot(data = penguins, 
-             mapping = aes(
-               x = bill_length_mm,
-               y = bill_depth_mm))+
-    geom_point( alpha = 0.2)+
-    geom_smooth(method = "lm")+
-    facet_wrap(facet = "species",
-               nrow = 3,#faceting vertically
-               scales = "fixed"))
-
-```
+## 
