@@ -7,7 +7,7 @@ editor:
 
 # Getting Started in R
 
-#### Instructions for installing R and R Studio: <https://posit.co/download/rstudio-desktop/>.
+#### Instructions for installing R and R Studio : <https://posit.co/download/rstudio-desktop/>.
 
 ### Additional Resources
 
