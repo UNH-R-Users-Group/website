@@ -31,7 +31,7 @@ modeling](https://www.learn-mlms.com/index.html)
 6\. [Guide for poisson
 regressions](https://stats.oarc.ucla.edu/r/dae/poisson-regression/)
 
-7\. [Choosing a graph type (data to viz)](https://www.data-to-viz.com/)
+7\. [Choosing a graph type (data-to-viz)](https://www.data-to-viz.com/)
 
 8\. [Guide for making grahs (this resource is linked to datatoviz in
 #6!)](https://r-graph-gallery.com/)
