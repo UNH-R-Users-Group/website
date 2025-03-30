@@ -1,0 +1,64 @@
+---
+title: "Untitled"
+format: html
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+```{r, include = FALSE}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+## Assumptions of Linear Regressions
+
+
+$y = mx + b$
+
+```{r}
+str(penguins)
+summary(penguins)
+
+
+ggplot(aes(x = body_mass_g, y = flipper_length_mm), data = penguins) +
+  geom_point() +
+  geom_smooth(method = "lm")
+
+
+mod <- lm(body_mass_g ~ flipper_length_mm + species, data = penguins)
+summary(mod)
+
+confint(mod, level = 0.90)
+
+penguins_short <- penguins %>% 
+  select(-c(bill_length_mm,bill_depth_mm,flipper_length_mm))
+str(penguins_short)
+
+mod2 <- lm(body_mass_g ~., data = penguins_short)
+summary(mod2)
+
+mod3 <- lm(body_mass_g ~.-island, data = penguins_short)
+summary(mod3)
+```
+
+## Plot diagnostics
+
+```{r}
+library(broom)
+par(mfrow = c(2,2))
+plot(mod3)
+
+mod3fit %>% 
+  select(-c(.rownames, .sigma)) %>% 
+  top_n(3, wt = .cooksd)
+#observation has high influence if Cook's distance exceeds 4/(n - p - 1)
+#n = number of observations
+#p = number of predictors 
+cook <- 4/(nrow(penguins_short) - 2)
+```
+-  residuals vs fitted: used to check linear relationship assumption. A horizontal line without a distinct pattern is wanted. 
+-  Q-Q residuals: used to check normal distribution. It is good if the lines follow the straight dashed line
+-  Scale location: used to check homogeneity of variance of residuals. Horizontal line with equally dispersed points is good. 
+-  Residuals versus leverage. Used to identify outliers that can influence the model. 
+
+
