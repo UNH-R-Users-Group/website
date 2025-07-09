@@ -107,8 +107,8 @@ d |>
      }
    ) |>
   
-  # Add link icon with links for the 'Videos' column
-  text_transform(cells_body(columns = c(Videos)),
+  # Add link icon with links for the 'Tutorial' column
+  text_transform(cells_body(columns = c(Tutorial)),
     fn = function(x) {
        ifelse(is.na(x), fontawesome::fa("link", fill_opacity = 0.1),
          glue::glue("<a href = '{x}'>{fontawesome::fa('link')}</a>")
@@ -119,7 +119,7 @@ d |>
   # Align columns: center for icons, left for dates/topics
   cols_align(
     align = "center", 
-    columns = c(Files, Data, Videos)
+    columns = c(Files, Data, Tutorial)
   ) |>
   
   # Align Date and Topic columns to the left
@@ -164,7 +164,7 @@ d |>
     Topic ~ px(250),
     Files ~ px(100),
     Data ~ px(100),
-    Videos ~ px(100)
+    Tutorial ~ px(100)
   )|>
   # Set table width to span a % of the available page width
   tab_options(
