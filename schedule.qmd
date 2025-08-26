@@ -61,7 +61,7 @@ library(gt)
 library(tidyverse)
 library(fontawesome)
 gs4_deauth()
-d <- read_sheet("https://docs.google.com/spreadsheets/d/1k4RPfWwKVxPpp4wRDEc08KDxzBLG3vOcWMC6_hsF648/edit?gid=0#gid=0", sheet = "Spring2025")
+d <- read_sheet("https://docs.google.com/spreadsheets/d/1k4RPfWwKVxPpp4wRDEc08KDxzBLG3vOcWMC6_hsF648/edit?gid=0#gid=0", sheet = "Fall2025")
 ```
 
 ```{r, echo = FALSE}
@@ -77,7 +77,7 @@ library(fontawesome)
 gs4_deauth()
 
 # Read the data from the Google Sheet
-d <- read_sheet("https://docs.google.com/spreadsheets/d/1k4RPfWwKVxPpp4wRDEc08KDxzBLG3vOcWMC6_hsF648/edit?gid=0", sheet = "Spring2025")
+d <- read_sheet("https://docs.google.com/spreadsheets/d/1k4RPfWwKVxPpp4wRDEc08KDxzBLG3vOcWMC6_hsF648/edit?gid=0", sheet = "Fall2025")
 
 # Render the table
 d |>
