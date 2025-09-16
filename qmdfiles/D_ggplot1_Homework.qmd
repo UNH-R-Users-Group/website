@@ -27,7 +27,8 @@ library(gapminder)
 1. Pick a year. Create a dataset which only contains that data for that year and is appropriately labeled. For example, if you choose the year `2007`, you might choose to call this new dataset `gapminder2007`. You will use this dataset for the rest of the assignment. 
 
 ```{r}
-
+gapminder2007 <- gapminder %>% 
+  filter(year == 2007)
 ```
 
 2. Using your dataset you created in 1, create a barplot which displays the GDP per capita of the ten countries with the highest GDP per capita that year. Be sure your axes are appropriately labeled. 
