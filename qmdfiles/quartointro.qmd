@@ -38,7 +38,6 @@ Below is a bar plot of species of penguins.
 ```{r}
 #| label: fig-bill-dims-species
 #| fig-width: 5
-#| fig-asp: 0.618
 #| fig-cap: |
 #|  A scatterplot of penguins' bill depth and length, colored by species of penguis. 
 
