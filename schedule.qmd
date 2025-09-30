@@ -45,10 +45,11 @@ Quarto](https://quarto.org/docs/guide/)
 11\. [Guide to publishing manuscripts using
 Quarto](https://quarto.org/docs/manuscripts/)
 
-12\. [Guide for formatting markdown
-documents - works in lots of programs](https://rmd4sci.njtierney.com/)
+12\. [Guide for formatting markdown documents - works in lots of
+programs](https://rmd4sci.njtierney.com/)
 
-13\. [GitHub CoPilot for students & faculty](https://docs.github.com/en/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/managing-your-github-copilot-pro-subscription/getting-free-access-to-copilot-pro-as-a-student-teacher-or-maintainer)
+13\. [GitHub CoPilot for students &
+faculty](https://docs.github.com/en/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/managing-your-github-copilot-pro-subscription/getting-free-access-to-copilot-pro-as-a-student-teacher-or-maintainer)
 
 # Schedule & Materials
 
