@@ -193,14 +193,14 @@
     "href": "qmdfiles/quartointro.html",
     "title": "Intro to Quarto",
     "section": "",
-    "text": "For this analysis we’ll use the penguins dataset from the palmerpenguins package Gorman et al. (2014).\n\n\nRows: 344\nColumns: 8\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…\n$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…"
+    "text": "For this analysis we’ll use the penguins dataset from the palmerpenguins package (Gorman et al., 2014).\n\n\nRows: 344\nColumns: 8\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…\n$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…"
   },
   {
     "objectID": "qmdfiles/quartointro.html#data",
     "href": "qmdfiles/quartointro.html#data",
     "title": "Intro to Quarto",
     "section": "",
-    "text": "For this analysis we’ll use the penguins dataset from the palmerpenguins package Gorman et al. (2014).\n\n\nRows: 344\nColumns: 8\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…\n$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…"
+    "text": "For this analysis we’ll use the penguins dataset from the palmerpenguins package (Gorman et al., 2014).\n\n\nRows: 344\nColumns: 8\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…\n$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…"
   },
   {
     "objectID": "qmdfiles/quartointro.html#species",
@@ -214,7 +214,7 @@
     "href": "qmdfiles/quartointro.html#penguins",
     "title": "Intro to Quarto",
     "section": "Penguins",
-    "text": "Penguins\nThis table shows the first 10 penguins from the dataset.\n\n\n\n\nTable 1: First 10 Penguins\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n\n\nAdelie\nTorgersen\n39.5\n17.4\n\n\nAdelie\nTorgersen\n40.3\n18.0\n\n\nAdelie\nTorgersen\nNA\nNA\n\n\nAdelie\nTorgersen\n36.7\n19.3\n\n\nAdelie\nTorgersen\n39.3\n20.6\n\n\nAdelie\nTorgersen\n38.9\n17.8\n\n\nAdelie\nTorgersen\n39.2\n19.6\n\n\nAdelie\nTorgersen\n34.1\n18.1\n\n\nAdelie\nTorgersen\n42.0\n20.2"
+    "text": "Penguins\nThis table shows the first 10 penguins from the dataset.\n\n\n\n\nTable 1: First 10 Penguins.\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n\n\nAdelie\nTorgersen\n39.5\n17.4\n\n\nAdelie\nTorgersen\n40.3\n18.0\n\n\nAdelie\nTorgersen\nNA\nNA\n\n\nAdelie\nTorgersen\n36.7\n19.3\n\n\nAdelie\nTorgersen\n39.3\n20.6\n\n\nAdelie\nTorgersen\n38.9\n17.8\n\n\nAdelie\nTorgersen\n39.2\n19.6\n\n\nAdelie\nTorgersen\n34.1\n18.1\n\n\nAdelie\nTorgersen\n42.0\n20.2"
   },
   {
     "objectID": "qmdfiles/quartointro.html#references",
